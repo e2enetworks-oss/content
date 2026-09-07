@@ -1,0 +1,32 @@
+product: almalinux10
+full_name: AlmaLinux OS 10
+type: platform
+
+major_version_ordinal: 10
+
+benchmark_id: ALMALINUX-10
+benchmark_root: "../../linux_os/guide"
+components_root: "../../components"
+
+profiles_root: "./profiles"
+
+pkg_manager: "dnf"
+
+init_system: "systemd"
+
+cpes_root: "../../shared/applicability"
+cpes:
+  - almalinux10:
+      name: "cpe:/o:almalinux:almalinux:10"
+      title: "AlmaLinux OS 10"
+      check_id: installed_OS_is_almalinux10
+
+# See https://almalinux.org/security/
+release_key_fingerprint: "EE6DB7B98F5BF5EDD9DA0DE5DEE5C11CC2A1E572"
+oval_feed_url: "https://security.almalinux.org/oval/org.almalinux.alsa-10.xml.bz2"
+
+pkg_version: "c2a1e572"
+pkg_release: "668fe8ef"
+
+reference_uris:
+  cis: 'https://www.cisecurity.org/benchmark/almalinuxos_linux/'

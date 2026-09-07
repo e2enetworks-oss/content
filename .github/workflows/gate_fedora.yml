@@ -38,6 +38,7 @@ jobs:
               alinux2 \
               alinux3 \
               almalinux9 \
+              almalinux10 \
               anolis23 \
               anolis8 \
               eks \
