@@ -19,7 +19,7 @@ SSG_REF_URIS = {
     'cobit5': 'https://www.isaca.org/resources/cobit',
     'cis-csc': 'https://www.cisecurity.org/controls/',
     'cjis': 'https://www.fbi.gov/file-repository/cjis-security-policy-v5_5_20160601-2-1.pdf',
-    'cui': 'http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf',
+    'cui': 'https://nvlpubs.nist.gov/nistpubs/SpecialPublications/800-171r3/NIST.SP.800-171r3.html',
     'dcid': 'not_officially_available',
     'disa': 'https://www.cyber.mil/stigs/cci/',
     'pcidss': 'https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-2-1.pdf',
@@ -56,7 +56,7 @@ product_directories = [
     'rhcos4',
     'ol7', 'ol8', 'ol9', 'ol10',
     'openeuler2203',
-    'opensuse',
+    'opensuse', 'opensuse16',
     'openembedded',
     'rhel8', 'rhel9', 'rhel10',
     'rhv4',
@@ -101,7 +101,7 @@ hipaa_ns = "https://www.gpo.gov/fdsys/pkg/CFR-2007-title45-vol1/pdf/CFR-2007-tit
 anssi_ns = "https://cyber.gouv.fr/sites/default/files/document/linux_configuration-en-v2.pdf"
 ospp_ns = "https://www.niap-ccevs.org/Profile/PP.cfm"
 pcidss4_ns = "https://docs-prv.pcisecuritystandards.org/PCI%20DSS/Standard/PCI-DSS-v4_0.pdf"
-cui_ns = 'http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf'
+cui_ns = 'https://nvlpubs.nist.gov/nistpubs/SpecialPublications/800-171r3/NIST.SP.800-171r3.html'
 stig_refs = 'https://www.cyber.mil/stigs/'
 disa_cciuri = "https://www.cyber.mil/stigs/cci/"
 ssg_version_uri = \
@@ -237,6 +237,7 @@ FULL_NAME_TO_PRODUCT_MAPPING = {
     "Oracle Linux 10": "ol10",
     "openEuler 2203": "openeuler2203",
     "openSUSE": "opensuse",
+    "openSUSE 16": "opensuse16",
     "Red Hat Enterprise Linux 8": "rhel8",
     "Red Hat Enterprise Linux 9": "rhel9",
     "Red Hat Enterprise Linux 10": "rhel10",
@@ -315,7 +316,7 @@ MULTI_PLATFORM_MAPPING = {
     "multi_platform_kylinserver": ["kylinserver10"],
     "multi_platform_kylinsecserver": ["kylinsecserver6"],
     "multi_platform_openeuler": ["openeuler2203"],
-    "multi_platform_opensuse": ["opensuse"],
+    "multi_platform_opensuse": ["opensuse", "opensuse16"],
     "multi_platform_ol": ["ol7", "ol8", "ol9", "ol10"],
     "multi_platform_ocp": ["ocp4"],
     "multi_platform_rhcos": ["rhcos4"],
